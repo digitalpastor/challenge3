@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+    <title>CWB Program | Stats preview card component</title>
+    <style>
+        * {
+            color: #F8F8F8;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: small;
+            
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+        }
+
+        .split-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 500px;
+            height: 400px;
+            row-gap: 20px;
+            overflow: hidden;  
+        }
+
+        .top-container {
+            background-color: #351450;
+            border-radius: 18px;
+            text-align: center;
+            background-image: url(images/wallet.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+           
+        
+        }
+
+        .bottom-container {
+            background-color: #9356C3;
+            border-radius: 18px;
+            text-align: left;
+            background-image: url(images/wallet.svg );
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 150px;
+            
+           
+           
+           
+        }
+
+        .top-figure2,
+        .bottom-figure2 {
+            text-decoration: line-through;
+            margin: 30px;
+        }
+        .top-figure1, .bottom-figure1{
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: x-large;
+            line-height: 1px;
+        }
+        .top-heading, .bottom-heading{
+            color:  hsl(0, 0%, 100%);
+            
+            
+        }
+        .top-text p{
+            padding: 13px;
+          
+          
+        }
+        .bottom-text p, .bottom-figure1, .bottom-heading2, .top-figure2{
+           padding: 15px;
+          height: 1px;
+          margin: 10px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="split-container">
+            <div class="top-container">
+                <div class="top-text">
+                    <p class="top-heading">Available Balance
+                    </p>
+                    <span class="top-figure1">
+                        #216,990
+                    </span>
+                    <h4 class="top-heading2">
+                        Unavailable Balance
+                    </h4>
+                    <span class="top-figure2">
+                        &#8358;216,990
+                    </span>
+    
+                </div>
+    
+                </div>
+            <div class="bottom-container">
+                <div class="bottom-text">
+                    <p class="bottom-heading">Active Balance
+                    </p>
+                    <span class="bottom-figure1">&#8358;216,990
+                    </span>
+                    <h4 class="bottom-heading2">
+                        Unavailable Balance
+                    </h4>
+                    <span class="bottom-figure2">
+                        &#8358;216,990
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
